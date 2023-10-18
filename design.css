@@ -81,7 +81,6 @@ a.mail{
     background-color: white;
     color: black;
 }
-
 button#profile-button {
     background-color: #456ba5;
     color: #fff;
@@ -93,5 +92,48 @@ button#profile-button {
     border-color: #263a58;
     border-width: 1px;
 }
+h4.titre{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    text-decoration-line: underline;
+    text-decoration-color: #000000;
+    text-align: center;
+    text-decoration-thickness: 1px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
 
-
+p.t1{
+    font-size: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #456ba5;
+}
+div.pge{
+    background-color: white;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    padding: 6px;
+    margin-top: 8px;
+}
+ul.pd{
+    font-size: 5px;
+    padding-left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+li.pd{
+    margin-bottom: 3px;
+    list-style-type: none;
+    list-style: none;
+    font-weight: bold;
+    color: #456ba5;
+}
+div.pg{
+    background-color: white;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    padding: 6px;
+    margin-top: 8px;
+}
