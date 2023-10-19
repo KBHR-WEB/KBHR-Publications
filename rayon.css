@@ -1,0 +1,231 @@
+body{
+    background-color: #456ba5;
+    position: relative;
+    margin: 5px;
+}
+img.p{
+    width: 30px;
+}
+img.retour{
+    width: 10px;
+    position: fixed;
+    opacity: calc(70%);
+}
+footer{
+    color: black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4pt;
+    background-color: #e1d102;
+    background-attachment: scroll;
+    padding: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: 25px;
+}
+h5.info{
+    font-size: 5pt;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+    font-style: italic;
+}
+p.info{
+    font-weight: bold;
+    font-style: italic;
+}
+div.address{
+    font-size: 5px;
+    text-align: center;
+    border-style: dashed;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 30px;
+    margin-top: 9px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+   padding-bottom: 3px;
+}
+a.mail{
+    text-decoration: none;
+}
+.dropbtn {
+    background-color: white;
+    color: #456ba5;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.dropdown-content a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #456ba5;
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+button#profile-button {
+    background-color: #456ba5;
+    color: #fff;
+    cursor: pointer;
+    font-size: 5px;
+    padding: 4px;
+    margin-left: 7px;
+    border-style: solid;
+    border-color: #263a58;
+    border-width: 1px;
+}
+body {
+    background-color: #456ba5;
+    margin: 5px;
+}
+img.logo{
+    width: 65px;
+    text-align: center;
+    display: block;
+    margin-left: 4px;
+    margin-right: 4px;
+
+}
+img.liasse{
+    width: 50px;
+}
+footer{
+    color: black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4pt;
+    background-color: #e1d102;
+    background-attachment: scroll;
+    padding: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: 25px;
+}
+h5.info{
+    font-size: 5pt;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+    font-style: italic;
+}
+p.info{
+    font-weight: bold;
+    font-style: italic;
+}
+div.address{
+    font-size: 5px;
+    text-align: center;
+    border-style: dashed;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 30px;
+    margin-top: 9px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+   padding-bottom: 3px;
+}
+a.mail{
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-width: 1px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+}
+h2.ti{
+    font-size: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.livres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.livre {
+    margin: 5px;
+    text-align: center;
+}
+h2.paie{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5px;
+}
+
+button.acheter {
+    background-color: white;
+    color: #456ba5;
+    border: none;
+    padding: 5px 7px;
+    cursor: pointer;
+    font-size: 8px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 4px;
+    padding: 2px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #e1d2026e;
+}
+
+button.achat {
+    display: block;
+    background-color: #456ba52f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 6px;
+    align-content: center;
+    text-align: center;
+    padding: 0%;
+}
