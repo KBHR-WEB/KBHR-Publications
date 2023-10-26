@@ -147,8 +147,8 @@ img.lm{
     margin-top: 8px;
 }
 
-button.ach{
-    font-size: 6px;
+a.ach{
+    font-size: 5px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -160,4 +160,6 @@ button.ach{
     padding-top: 3px;
     padding-bottom: 3px;
     color: white;
+    display: block;
+    text-decoration-line: none;
 }
