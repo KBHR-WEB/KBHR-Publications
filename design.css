@@ -129,10 +129,10 @@ ul.pd{
 }
 li.pd{
     margin-bottom: 3px;
-    list-style-type: none;
-    list-style: none;
     font-weight: bold;
     color: #456ba5;
+    list-style: decimal;
+    list-style-position: outside;
 }
 div.pg{
     background-color: white;
@@ -145,4 +145,19 @@ div.pg{
 img.lm{
     width: 75px;
     margin-top: 8px;
+}
+
+button.ach{
+    font-size: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #456ba5;
+    align-self: center;
+    border-style: solid;
+    border-color: #263a58;
+    border-width: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
 }
