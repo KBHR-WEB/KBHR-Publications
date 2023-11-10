@@ -97,61 +97,19 @@ button#profile-button {
     border-color: #263a58;
     border-width: 1px;
 }
-body {
-    background-color: #456ba5;
-    margin: 5px;
-}
 img.logo{
     width: 65px;
     text-align: center;
     display: block;
     margin-left: 4px;
     margin-right: 4px;
-
 }
 img.liasse{
     width: 50px;
 }
-footer{
-    color: black;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 4pt;
-    background-color: #e1d102;
-    background-attachment: scroll;
-    padding: 5px;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-top: 25px;
-}
-h5.info{
-    font-size: 5pt;
-    text-decoration: underline;
-    text-decoration-color: #000000;
-    font-style: italic;
-}
-p.info{
-    font-weight: bold;
-    font-style: italic;
-}
-div.address{
-    font-size: 5px;
-    text-align: center;
-    border-style: dashed;
-    border-color: white;
-    border-width: 1px;
-    border-radius: 30px;
-    margin-top: 9px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-   padding-bottom: 3px;
-}
-a.mail{
-    text-decoration: none;
-}
 h1 {
     text-align: center;
-    font-size: 10px;
+    font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-width: 1px;
     background-color: white;
@@ -237,4 +195,19 @@ p.prix{
     font-family: Arial, Helvetica, sans-serif;
     margin: 2px;
     color: #e1d102;
+}
+div.pack{
+    border-style: dashed;
+    border-width: 1px;
+    color: #e1d102;
+}
+
+img.pp{
+    width: 40px;
+}
+h3.tit{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 9px;
 }
