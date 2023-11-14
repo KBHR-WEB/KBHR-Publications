@@ -44,6 +44,29 @@
 
     <script src="script.js"></script>
 
+
+        <div class="chat-container">
+        <button class="chat-button" onclick="toggleChat()">
+            <img class="bulle" src="Downloads/kisspng-computer-icons-scalable-vector-graphics-portable-n-bubble-svg-vector-icon-free-icons-uihere-5d06e6cc382247.1472002915607333882299.png" alt="">
+        </button>
+        <div class="chat-box" id="chatBox">
+          <div class="chat-header">
+            <h3>Boîte de messagerie</h3>
+            <button class="close-button" onclick="toggleChat()">X</button>
+          </div>
+          <div class="chat-messages" id="chatMessages">
+            <!-- Messages affichés ici -->
+          </div>
+          <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Écrivez un message...">
+            <button onclick="sendMessage()">Envoyer</button>
+          </div>
+        </div>
+      </div>
+      
+      <script src="java.js"></script>
+    
+
     <div class="address">
         <address>
             <h5 class="info">Contactez-Nous</h5>
