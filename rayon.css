@@ -135,7 +135,8 @@ h2.ti{
 }
 h2.paie{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 5px;
+    font-size: 6px;
+    margin-bottom: 25px;
 }
 
 button.acheter {
