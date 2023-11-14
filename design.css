@@ -165,10 +165,11 @@ a.ach{
 }
 
 
+
 .chat-container {
     position: fixed;
     bottom: 15px;
-    right: 1px;
+    right: 8px;
   }
   
   .chat-button {
@@ -177,14 +178,14 @@ a.ach{
     border-width: 0.001cm;
     font-size: 5px;
     padding: 5px;
+    background-color: rgba(255, 255, 255, 0.527);
   }
   
   .chat-box {
     display: none;
     border-color:#000000;
-    border-style: double;
-    border-width: 0.01cmpx;
-    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.00001cm;
     width: 70px;
     height: 120px;
     overflow: auto;
@@ -193,12 +194,14 @@ a.ach{
   
   .chat-header {
     background-color: #456ba5;
-    padding: 2px;
-    display: flex;
-    justify-content: space-between;
+    padding: 1px;
+    position: fixed;
     font-size: 6px;
+    padding: 1px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    color: white;
   }
   
   .close-button {
@@ -206,7 +209,6 @@ a.ach{
     font-size: 6px;
     padding: 2px;
     border-radius: 100px;
-    margin-right: 6px;
     border-style: none;
     background-color: #ffffff;
   }
@@ -215,17 +217,20 @@ a.ach{
     display: flex;
     align-items: center;
     position: fixed;
-    bottom: 30px;
+    bottom: 15px;
     margin: 3px;
   }
   
   .chat-input input[type="text"] {
     flex: 1;
     width: 38px;
-    font-size: 5px;
-    border-style: solid ;
-    border-width: 0.0001mm;
+    font-size: 6px;
+    border-style: none ;
+    border-style: solid;
+    border-width: 0.01cm;
     border-color: #000000;
+    position: absolute;
+    top: 1px;
   }
   
   .chat-input button {
@@ -234,7 +239,11 @@ a.ach{
     color: #fff;
     border: none;
     cursor: pointer;
+    pointer-events: none;
     font-size: 4px;
+    position: absolute;
+    top: 1px;
+    left: 45px;
   }
 
   .bulle{
@@ -264,4 +273,7 @@ a.ach{
     border-radius: 10px;
     padding: 8px;
     margin: 5px 0;
+  }
+  .chat-messages{
+    z-index: 1;
   }
