@@ -45,22 +45,18 @@
     <script src="script.js"></script>
 
 
-        <div class="chat-container">
-        <button class="chat-button" onclick="toggleChat()">
-            <img class="bulle" src="kisspng-computer-icons-scalable-vector-graphics-portable-n-bubble-svg-vector-icon-free-icons-uihere-5d06e6cc382247.1472002915607333882299.png" alt="">
-        </button>
+    <div class="chat-bubble">
+        <div class="chat-icon">
+          <img src="file:///C:/Users/DEDOH%20Maeva/Downloads/kisspng-computer-icons-scalable-vector-graphics-portable-n-bubble-svg-vector-icon-free-icons-uihere-5d06e6cc382247.1472002915607333882299.png" alt="Message Icon">
+        </div>
         <div class="chat-box" id="chatBox">
-          <div class="chat-header">
-            <h3>Boîte de messagerie</h3>
-            <button class="close-button" onclick="toggleChat()">X</button>
+          <div class="chat-content" id="chatContent">
+            <div class="message received"> Service d'aide automatique bonjour! Je suis Zoe, votre assistante virtuelle! </div>
           </div>
-          <div class="chat-messages" id="chatMessages">
-            <!-- Messages affichés ici -->
-          </div>
-          <div class="chat-input">
-            <input type="text" id="messageInput" placeholder="Écrivez un message...">
-            <button onclick="sendMessage()">Envoyer</button>
-          </div>
+          <input type="text" id="userInput" placeholder="Tapez votre message...">
+          <button id="sendMessageBtn">
+            <img src="file:///C:/Users/DEDOH%20Maeva/Pictures/t%C3%A9l%C3%A9chargement.png" alt="">
+          </button>
         </div>
       </div>
       
