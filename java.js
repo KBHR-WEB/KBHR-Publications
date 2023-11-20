@@ -1,30 +1,60 @@
-let chatOpen = false;
+const chatIcon = document.querySelector('.chat-icon');
+const chatBox = document.querySelector('.chat-box');
+const userInput = document.getElementById('userInput');
+const chatContent = document.getElementById('chatContent');
 
-function toggleChat() {
-  const chatBox = document.getElementById('chatBox');
-  chatOpen = !chatOpen;
-  if (chatOpen) {
-    chatBox.style.display = 'block';
+chatIcon.addEventListener('click', () => {
+  chatBox.style.display = chatBox.style.display === 'block' ? 'none' : 'block';
+});
+
+userInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    const userMessage = userInput.value;
+    appendMessage('sent', userMessage);
+    processUserInput(userMessage);
+    userInput.value = '';
+  }
+});
+
+function appendMessage(type, message) {
+  const newMessage = document.createElement('div');
+  newMessage.classList.add('message', type);
+  newMessage.innerText = message;
+  chatContent.appendChild(newMessage);
+}
+
+function processUserInput(message) {
+  const keywords = ['bonjour', 'aide', 'information', 'probleme', 'achat', 'acheter'];
+
+  const lowerCaseMessage = message.toLowerCase();
+  if (lowerCaseMessage.includes('bonjour')) {
+    respondToUser('Bienvenue sur notre messagerie! Comment puis-je vous aider?');
+  } else if (lowerCaseMessage.includes('aide')) {
+    respondToUser('Bien sûr! Je vais vous aidez! Voulez vous savoir comment avoir accès à nos produits? Voulez vous en acheter? Ou rencontrez vous un problème avec un de nos produits?');
+  } else if (lowerCaseMessage.includes('information')) {
+    respondToUser('Pour toute information, je vous redirige vers un numéro! Composez le :');
+  } else if (lowerCaseMessage.includes('probleme')) {
+    respondToUser('Oh non! Je suis navrée! Je vous met immédiatement en contact avec le service client!');
   } else {
-    chatBox.style.display = 'none';
+    respondToUser('Rencontrez vous un problème? Nous pouvons le résoudre ensemble décrivez-le moi!');
   }
+  if (lowerCaseMessage.includes('achat'),('acheter')) {
+    respondToUser('Voulez vous acheter un livre? Je vous transmet le lien qui vous mènera à la librairie! Pas de quoi :) !');
+  }
+
+function respondToUser(response) {
+  setTimeout(() => {
+    appendMessage('received', response);
+  }, 500);
 }
 
-function sendMessage() {
-  const messageInput = document.getElementById('messageInput');
-  const chatMessages = document.getElementById('chatMessages');
-  const messageText = messageInput.value;
+const sendMessageBtn = document.getElementById('sendMessageBtn');
 
-  if (messageText.trim() !== '') {
-    const messageElement = document.createElement('div');
-    messageElement.textContent = messageText;
-
-    messageElement.classList.add('message', 'sent'); // Ajout de la classe 'sent' pour les messages envoyés
-
-    chatMessages.appendChild(messageElement);
-    messageInput.value = '';
+sendMessageBtn.addEventListener('click', () => {
+  const userMessage = userInput.value;
+  if (userMessage.trim() !== '') {
+    appendMessage('sent', userMessage);
+    processUserInput(userMessage);
+    userInput.value = '';
   }
-}
-
-
-
+})};
