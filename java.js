@@ -33,14 +33,15 @@ function processUserInput(message) {
     respondToUser('Bien sûr! Je vais vous aidez! Voulez vous savoir comment avoir accès à nos produits? Voulez vous en acheter? Ou rencontrez vous un problème avec un de nos produits?');
   } else if (lowerCaseMessage.includes('information')) {
     respondToUser('Pour toute information, je vous redirige vers un numéro! Composez le :');
+  } else if (lowerCaseMessage.includes('achat'),('acheter')) {
+    respondToUser('Voulez vous acheter un livre? Je vous transmet le lien qui vous mènera à la librairie! Pas de quoi :) !');
+  }
   } else if (lowerCaseMessage.includes('probleme')) {
     respondToUser('Oh non! Je suis navrée! Je vous met immédiatement en contact avec le service client!');
   } else {
     respondToUser('Rencontrez vous un problème? Nous pouvons le résoudre ensemble décrivez-le moi!');
   }
-  if (lowerCaseMessage.includes('achat'),('acheter')) {
-    respondToUser('Voulez vous acheter un livre? Je vous transmet le lien qui vous mènera à la librairie! Pas de quoi :) !');
-  }
+
 
 function respondToUser(response) {
   setTimeout(() => {
