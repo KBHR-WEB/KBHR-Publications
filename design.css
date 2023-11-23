@@ -4,12 +4,7 @@ body{
     margin: 5px;
 }
 img.logo{
-    width: 65px;
-    text-align: center;
-    display: block;
-    margin-left: 4px;
-    margin-right: 4px;
-
+    width: 40px;
 }
 footer{
     color: black;
@@ -186,7 +181,7 @@ a.ach{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #ffffff93;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,8 +235,8 @@ a.ach{
 #sendMessageBtn{
   width: 18px;
   position: fixed; 
-  bottom: 20px;
-  right: 3px;
+  bottom: 33px;
+  right: 7px;
   border-style: none;
   border-radius: 50px;
 }
