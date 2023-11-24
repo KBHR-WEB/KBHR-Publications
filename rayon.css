@@ -193,23 +193,32 @@ button.achat {
 }
 
 p.prix{
-    font-size: 6px;
+    font-size: 7px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 2px;
     color: #e1d102;
+    text-align: center;
 }
 div.pack{
     border-style: dashed;
     border-width: 1px;
     color: #e1d102;
+    padding: 3px;
 }
 
 img.pp{
-    width: 40px;
+    width: 70px;
 }
 h3.tit{
     text-align: center; 
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 9px;
+}
+p.app{
+    font-size: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: dotted;
+    border-width: 0.001cm;
+    border-color: #456ba5;
+    padding: 5px;
 }
